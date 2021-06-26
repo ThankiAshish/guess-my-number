@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;500;700&display=swap');
+
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    color: #f7f7f7;
+    font: 15px/1.5 'Noto Sans JP', Segoe UI, Helvetica sans-serif;
+    height: 100vh;
+}
+
+/* Header */
+#header {
+    background-color: #d2691e;
+    box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+#header h1 {
+    font-size: 60px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+#message {
+    font-size: 30px;
+}
+
+/* Body Section */
+#body-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 71vh;
+}
+
+/* Input Section */
+#input-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#input,
+#guess-btn,
+#reset-btn {
+    outline: none;
+    text-align: center;
+    height: 30px;
+    width: 300px;
+}
+
+#guess-btn,
+#reset-btn {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+    background-color: #b1e1ff;
+    transition: background-color, transform 0.2s ease-in;
+}
+
+#guess-btn:hover,
+#reset-btn:hover {
+    background-color: #86ccf7;
+    transform: scale(0.99);
+}
+
+/* Score Display Section */
+#score-display-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 10em;
+    margin: 10px 0;
+}
+
+#score-display-section p {
+    font-size: 25px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    #header h1 {
+        font-size: 43px;
+    }
+
+    #message {
+        font-size: 25px;
+    }
+}

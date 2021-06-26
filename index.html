@@ -5,16 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Guess My Number</title>
 </head>
 <body>
-    <h1>Guess My Number</h1>
-    <p id="message"></p>
-    <input type="number" name="Enter Number" id="input">
-    <button id="guess-btn">Guess</button>
-    <button id="reset-btn" disabled>Play Again!</button>
-    <p>Score: <span id="score-display">20</span></p>
-    <p>HighScore: <span id="highscore-display">0</span></p>
+
+    <div id="header">
+        <h1>Guess My Number</h1>
+        <p id="message">Start Guessing....</p>
+    </div>
+    <div id="body-section">
+        <div id="input-section">
+            <input type="number" name="Enter Number" id="input" placeholder="Enter Guessed Number..." required>
+            <button id="guess-btn">Guess</button>
+            <button id="reset-btn" disabled>Play Again!</button>
+        </div>
+    
+        <div id="score-display-section">
+            <p>Score: <span id="score-display">20</span></p>
+            <p>Highscore: <span id="highscore-display">0</span></p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
