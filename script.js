@@ -85,7 +85,7 @@ function gameLogic() {
             }
         }
     }else {
-        alert("Please Enter Number First!!!");
+        alert("Please Enter Number First!!!");      // Alert user if they didn't add anything in input
     }
 }
 
