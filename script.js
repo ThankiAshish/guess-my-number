@@ -26,7 +26,7 @@ function gameLogic() {
         score--;
         scoreDisplay.textContent = score;
         message.textContent = "Correct!";
-        if(currentAttempts < prevAttempts || prevAttempts === 0) {
+        if(currentAttempts <= prevAttempts || prevAttempts === 0) {
             highscore++;
             highscoreDisplay.textContent = highscore;
         }
