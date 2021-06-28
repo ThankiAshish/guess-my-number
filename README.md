@@ -8,5 +8,6 @@
 * Your Score will be increased to 1 
 * You can play next round by clicking on Play Again!
 * If you guess the number in less attempts or equal attempts than your previous game then the score will be increased again
+* https://guessmynumber-js.netlify.app/
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1058cc5c-af55-462d-91c6-f9eae309c6bf/deploy-status)](https://app.netlify.com/sites/guessmynumber-js/deploys)
